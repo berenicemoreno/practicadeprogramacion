@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        #contenido {
+            display: none;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <div id="contenido">
+        <p>
+            ¡Hola!<br />
+            Sigue las instrucciones: En esta página hay dos funciones, cada una te dirá cómo funciona.<br />
+            Para volver a iniciar las funciones, recarga la página.
+        </p>
+
+        <p>
+            Función 1: Presiona el botón siguiente para ver una lista de los 7 días de la semana.
+        </p>
+        <input type="button" value="Muestra días" onclick="dias()" />
+        <br /><br />
+
+        <p>
+            Función 2: Introduce en la caja de texto el número del cual quieres conocer la tabla de multiplicar.<br />
+            Después, haz clic fuera de la caja de texto para ver el resultado.
+        </p>
+        <input type="number" onblur="tablaMulti(this.value)" />
+        <br /><br />
+
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
